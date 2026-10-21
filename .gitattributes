@@ -1,0 +1,21 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# Explicitly declare text files you want to always be normalized and not touched by diff
+*.kt text diff=kotlin
+*.kts text diff=kotlin
+*.xml text
+*.json text
+*.md text
+*.properties text
+
+# Declare files that will always have CRLF line endings on checkout
+*.bat text eol=crlf
+
+# Denote all binary files that should not be modified
+*.png binary
+*.jpg binary
+*.webp binary
+*.jar binary
+*.keystore binary
+*.jks binary
